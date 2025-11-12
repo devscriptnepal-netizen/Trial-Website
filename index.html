@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ✅ Basic Page Setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DevScript Nepal | Leading Web & Software Development Company in Nepal</title>
+  <meta name="description" content="DevScript Nepal is a professional IT company in Nepal offering website design, web development, mobile apps, software solutions, branding, and IT consulting services for startups and enterprises." />
+  <meta name="keywords" content="Dev Script Nepal, IT company Nepal, web development Nepal, software company Nepal, mobile app development Nepal, branding, IT consulting Nepal, digital solutions" />
+  <meta name="author" content="DevScript Nepal" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://devscriptnepal.com.np/" />
+
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DevScript Nepal | Leading Web & Software Development Company in Nepal" />
+  <meta property="og:description" content="Building the future of technology — Web, App, and Software Development by DevScript Nepal." />
+    <meta property="og:image" content="https://devscriptnepal.com.np/logo.png" />
+  <meta property="og:url" content="https://devscriptnepal.com.np/" />
+  <meta property="og:site_name" content="Dev Script Nepal" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dev Script Nepal | Web & Software Development Experts" />
+  <meta name="twitter:description" content="Partner with DevScript Nepal for web, app, and software solutions designed to help your business grow." />
+    <meta name="twitter:image" content="https://devscriptnepal.com.np/logo.png" />
+
+  <!-- ✅ Favicon -->
+    <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- ✅ Mobile & Browser Branding -->
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- ✅ Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Schema.org Organization + Website Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "DevScript Nepal",
+        "alternateName": ["Dev Script", "DevScript", "Dev Script Nepal", "DevScript Nepal Pvt. Ltd."],
+        "url": "https://devscriptnepal.com.np/",
+    "logo": "https://devscriptnepal.com.np/logo.png",
+        "description": "DevScript Nepal provides web, app, and software development, branding, and IT consulting services for startups and enterprises.",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61582986553210",
+          "https://www.instagram.com/devscriptnepal/",
+          "https://www.linkedin.com/in/devscript-nepal-8b556b395/",
+          "https://www.tiktok.com/@devscriptnepal"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://devscriptnepal.com.np/",
+        "name": "DevScript Nepal",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://devscriptnepal.com.np/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <!-- Logo image -->
+                        <img src="final.png" alt="DevScript Nepal Logo" class="logo-img">
+                    </div>
+                    <!-- <span class="logo-text">DevScript </span> -->
+                </a>
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                   
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
+        <!-- 3D hero canvas (renders behind hero content) -->
+        <div id="hero3d" class="hero3d" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Floating Icons -->
+                <!-- <div class="floating-icons">
+                    <div class="icon-box float-1">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="icon-box float-2">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="icon-box float-3">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                </div> -->
+
+                <h1 class="hero-title">
+                    <span class="gradient-text">DevScript Nepal</span>
+                </h1>
+
+                <div class="typing-container">
+                    <h2 class="hero-subtitle" id="typingText"></h2>
+                    <span class="cursor"></span>
+                </div>
+
+                <p class="hero-description">
+                    Empowering businesses with cutting-edge technology solutions. 
+                    We craft innovative software that transforms ideas into reality.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">
+                        Explore Our Services
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#portfolio" class="btn-secondary">View Portfolio</a>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About <span class="highlight">DevScript Nepal</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    DevScript Nepal a leading IT startup based in Nepal, dedicated to transforming businesses through 
+                    innovative technology solutions and exceptional digital experiences.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Story -->
+                <div class="about-story fade-left">
+                    <div class="card">
+                        <h3 class="card-title highlight">Our Story</h3>
+                        <p>
+                            Founded with a vision to revolutionize the IT landscape in Nepal, Dev Script Nepal 
+                            has grown into a trusted partner for businesses seeking digital transformation.
+                        </p>
+                        <p>
+                            Our team of expert developers, designers, and strategists work together to create 
+                            solutions that are not just functional, but extraordinary.
+                        </p>
+                        <p>
+                            We believe in the power of technology to create positive change, and we're 
+                            committed to delivering excellence in every project we undertake.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="features-grid fade-right">
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <h4>Innovation First</h4>
+                        <p>We leverage cutting-edge technologies to deliver solutions that exceed expectations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <h4>Goal-Oriented</h4>
+                        <p>Every project is meticulously planned and executed to meet your business objectives.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h4>Client-Centric</h4>
+                        <p>Your success is our priority. We work closely with you every step of the way.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <h4>Quality Assured</h4>
+                        <p>We maintain the highest standards in code quality, security, and performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="vision-mission-grid fade-up">
+                <div class="card vision-card">
+                    <h3 class="card-title">Our Vision</h3>
+                    <p>
+                        To be the leading technology partner in Nepal, recognized globally for our 
+                        innovative solutions and commitment to excellence in software development.
+                    </p>
+                </div>
+                <div class="card mission-card">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p>
+                        To empower businesses with cutting-edge technology solutions that drive growth, 
+                        efficiency, and innovation while fostering a culture of continuous learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Comprehensive technology solutions tailored to your business needs
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <a href="service-web-development.html" class="service-card-link">
+                    <div class="service-card fade-up">
+                        <div class="card">
+                            <svg class="service-icon blue" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3>Web Development</h3>
+                            <p>Custom web applications built with modern frameworks like React, Next.js, and Node.js for optimal performance.</p>
+                            <div class="service-link">
+                                <span>Learn More</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 2 -->
+                <a href="service-mobile-apps.html" class="service-card-link">
+                    <div class="service-card fade-up">
+                        <div class="card">
+                            <svg class="service-icon gold" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                            <h3>Mobile Apps</h3>
+                            <p>Native and cross-platform mobile applications that deliver seamless user experiences on iOS and Android.</p>
+                            <div class="service-link">
+                                <span>Learn More</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 3 -->
+                <a href="service-uiux-design.html" class="service-card-link">
+                    <div class="service-card fade-up">
+                        <div class="card">
+                            <svg class="service-icon blue" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            <h3>UI/UX Design</h3>
+                            <p>Beautiful, intuitive interfaces designed with user experience at the forefront of every decision.</p>
+                            <div class="service-link">
+                                <span>Learn More</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 4 -->
+                <a href="service-database-solutions.html" class="service-card-link">
+                    <div class="service-card fade-up">
+                        <div class="card">
+                            <svg class="service-icon red" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                            <h3>Database Solutions</h3>
+                            <p>Scalable database architecture and optimization for efficient data management and retrieval.</p>
+                            <div class="service-link">
+                                <span>Learn More</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 5 -->
+                <a href="service-cloud-services.html" class="service-card-link">
+                    <div class="service-card fade-up">
+                        <div class="card">
+                            <svg class="service-icon blue" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                            <h3>Cloud Services</h3>
+                            <p>Cloud infrastructure setup, migration, and management on AWS, Azure, and Google Cloud Platform.</p>
+                            <div class="service-link">
+                                <span>Learn More</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 6 -->
+                <a href="service-cybersecurity.html" class="service-card-link">
+                    <div class="service-card fade-up">
+                        <div class="card">
+                            <svg class="service-icon gold" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <h3>Cybersecurity</h3>
+                            <p>Comprehensive security solutions to protect your applications and data from cyber threats.</p>
+                            <div class="service-link">
+                                <span>Learn More</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+            <!-- CTA -->
+            <div class="services-cta fade-in">
+                <p>Don't see what you're looking for? We offer custom solutions too.</p>
+                <a href="#contact" class="btn-primary">Get Custom Solution</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Our <span class="highlight">Portfolio</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Showcasing our recent projects and innovative solutions
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-up">
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80" alt="devscript E-Commerce Platform">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Development</div>
+                            <h3>E-Commerce Platform</h3>
+                            <p>A modern e-commerce solution with real-time inventory management and payment integration.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-up">
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="Dev Script Healthcare App">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Mobile Development</div>
+                            <h3>Healthcare App</h3>
+                            <p>Patient management system with appointment scheduling and telemedicine capabilities.</p>
+                            <div class="project-tags">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-up">
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Dev Script Financial Dashboard">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Application</div>
+                            <h3>Financial Dashboard</h3>
+                            <p>Real-time analytics dashboard for tracking financial metrics and KPIs.</p>
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-up">
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80" alt="Dev Script Social Media Platform">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Full Stack</div>
+                            <h3>Social Media Platform</h3>
+                            <p>Community-driven social network with real-time messaging and content sharing.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Express</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-up">
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="AI Chatbot">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Machine Learning</div>
+                            <h3>AI Chatbot</h3>
+                            <p>Intelligent customer service chatbot powered by natural language processing.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card fade-up">
+                    <div class="card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Logistics Tracker">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">IoT & Web</div>
+                            <h3>Logistics Tracker</h3>
+                            <p>Real-time package tracking system with GPS integration and delivery optimization.</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="portfolio-cta fade-in">
+                <a href="#contact" class="btn-secondary">Have a Project in Mind?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Let's discuss how we can help bring your ideas to life
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info fade-left">
+                    <div class="card">
+                        <h3 class="card-title highlight">Contact Information</h3>
+                        <p>Fill out the form and our team will get back to you within 24 hours.</p>
+
+                        <div class="contact-items">
+                            <a href="mailto:info@devscriptnepal.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">info@devscriptnepal.com.np</div>
+                                </div>
+                            </a>
+
+                            <a href="tel:+9779876543210" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-value">+977 9765224252</div>
+                                </div>
+                            </a>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">Kathmandu, Nepal</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <p>Follow us on social media</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/devscript-nepal-8b556b395/" class="social-link" aria-label="LinkedIn" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/devscriptnepal/" class="social-link" aria-label="Instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61582986553210" class="social-link" aria-label="Facebook" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@devscriptnepal" class="social-link" aria-label="TikTok" target="_blank">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper fade-right">
+                    <form id="contactForm" class="card">
+                        <div id="successMessage" class="success-message">
+                            Thank you! We'll get back to you soon.
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-full">
+                            <spans>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span><img src="final.png" alt="DevScript Nepal Logo" class="logo-img"></span>
+                        </div>
+                        <span class="logo-text"></span>
+                    </div>
+                    <p>
+                        Empowering businesses with cutting-edge technology solutions. 
+                        Based in Nepal, serving globally.
+                    </p>
+                    <div class="footer-social">
+                                <a href="https://www.linkedin.com/in/devscript-nepal-8b556b395/" class="social-link" aria-label="LinkedIn" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/devscriptnepal/" class="social-link" aria-label="Instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61582986553210" class="social-link" aria-label="Facebook" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@devscriptnepal" class="social-link" aria-label="TikTok" target="_blank">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Cloud Services</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> DevScript Nepal Pvt. Ltd. — also known as DevScript</p>
+                                <!-- <p>© <span id="currentYear"></span> DevScript Nepal Pvt. Ltd. — also known as DevScript, Made with ❤️ in Nepal</p> -->
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+        <!-- WhatsApp Button -->
+    <a href="https://wa.me/9779765224252" target="_blank" id="whatsappButton" class="whatsapp-button" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.372 0 0 5.373 0 12c0 2.12.554 4.112 1.515 5.845L0 24l6.316-1.658A11.94 11.94 0 0 0 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0Zm0 21.818a9.764 9.764 0 0 1-4.988-1.369l-.357-.21-3.754.985 1.004-3.658-.233-.376A9.76 9.76 0 0 1 2.182 12c0-5.43 4.387-9.818 9.818-9.818S21.818 6.57 21.818 12 17.43 21.818 12 21.818Zm5.5-7.362c-.302-.151-1.786-.88-2.064-.981-.277-.1-.479-.151-.681.151-.201.302-.782.981-.958 1.182-.176.202-.353.227-.655.076-.302-.151-1.276-.47-2.432-1.497-.899-.802-1.505-1.79-1.681-2.092-.176-.302-.019-.465.133-.616.136-.135.302-.353.453-.529.151-.176.201-.302.302-.504.1-.201.05-.378-.025-.529-.075-.151-.681-1.64-.934-2.242-.246-.591-.497-.511-.681-.521l-.581-.01c-.201 0-.529.076-.806.378-.277.302-1.06 1.035-1.06 2.525 0 1.49 1.086 2.93 1.238 3.132.151.201 2.137 3.263 5.178 4.573.725.313 1.29.5 1.73.64.727.232 1.388.2 1.91.121.583-.086 1.786-.728 2.038-1.43.252-.704.252-1.306.176-1.43-.075-.126-.277-.202-.579-.353Z"/>
+        </svg>
+    </a>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

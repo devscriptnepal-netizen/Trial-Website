@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://devscriptnepal.com.np/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://devscriptnepal.com.np/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://devscriptnepal.com.np/services.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Portfolio -->
+  <url>
+    <loc>https://devscriptnepal.com.np/portfolio.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://devscriptnepal.com.np/contact.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  
+  <!-- 👇 Individual Service Pages -->
+  <url>
+    <loc>https://devscriptnepal.com.np/service-web-development.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://devscriptnepal.com.np/service-mobile-apps.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://devscriptnepal.com.np/service-uiux-design.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://devscriptnepal.com.np/service-database-solutions.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://devscriptnepal.com.np/service-cloud-services.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://devscriptnepal.com.np/service-cybersecurity.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+</urlset>
+
+

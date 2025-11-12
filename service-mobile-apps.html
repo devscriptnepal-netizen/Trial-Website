@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ✅ Basic Page Setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Mobile App Development in Nepal | Android, iOS & Cross-Platform Experts - DevScript Nepal</title>
+  <meta name="description" content="DevScript Nepal builds high-performance Android, iOS, and cross-platform mobile apps. From concept to deployment, we deliver secure, scalable, and user-focused digital experiences for businesses in Nepal." />
+  <meta name="keywords" content="mobile app development Nepal, Android app Nepal, iOS app Nepal, Flutter app Nepal, React Native Nepal, cross-platform apps, app development company Nepal, mobile app developers Nepal, DevScript Nepal" />
+  <meta name="author" content="DevScript Nepal" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://devscriptnepal.com.np/service-mobile-apps.html" />
+
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mobile App Development in Nepal | Android, iOS & Cross-Platform Experts - DevScript Nepal" />
+  <meta property="og:description" content="Transform your ideas into high-quality mobile apps with DevScript Nepal. We develop Android, iOS, and cross-platform applications for startups and enterprises." />
+  <meta property="og:url" content="https://devscriptnepal.com.np/service-mobile-apps.html" />
+  <meta property="og:image" content="https://devscriptnepal.com.np/assets/mobile-app-preview.jpg" />
+  <meta property="og:site_name" content="DevScript Nepal" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mobile App Development in Nepal | Android, iOS & Cross-Platform Experts - DevScript Nepal" />
+  <meta name="twitter:description" content="Custom Android, iOS, and cross-platform mobile apps built for performance and scale by DevScript Nepal." />
+  <meta name="twitter:image" content="https://devscriptnepal.com.np/assets/mobile-app-preview.jpg" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="https://devscriptnepal.com.np/fevicon.svg" />
+
+  <!-- ✅ Browser Theme -->
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- ✅ Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "DevScript Nepal",
+        "url": "https://devscriptnepal.com.np/",
+        "logo": "https://devscriptnepal.com.np/fevicon.svg",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61582986553210",
+          "https://www.instagram.com/devscriptnepal/",
+          "https://www.linkedin.com/in/devscript-nepal-8b556b395/",
+          "https://www.tiktok.com/@devscriptnepal"
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Mobile App Development",
+        "provider": {
+          "@type": "Organization",
+          "name": "DevScript Nepal",
+          "url": "https://devscriptnepal.com.np/"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Nepal"
+        },
+        "description": "DevScript Nepal specializes in Android, iOS, and cross-platform mobile app development using Flutter, React Native, and modern UI/UX frameworks.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Mobile App Development Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Android App Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "iOS App Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cross-Platform App Development (Flutter, React Native)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Maintenance & Optimization" } }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <!-- Logo image -->
+                        <img src="final.png" alt="DevScript Nepal Logo" class="logo-img">
+                    </div>
+                    <span class="logo-text"></span>
+                </a>
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
+        
+        <div class="container">
+            <div class="fade-in">
+                <div class="icon-box" style="display: inline-block; margin-bottom: 1.5rem;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--golden-yellow);">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                </div>
+                <h1 class="page-title">
+                    <span class="gradient-text">Mobile App Development</span>
+                </h1>
+                <p class="page-description">
+                    Native and cross-platform mobile applications that deliver seamless user experiences 
+                    on iOS and Android platforms with cutting-edge features.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="fade-left">
+                    <div class="card">
+                        <h2 class="card-title highlight">Mobile Excellence</h2>
+                        <p>
+                            In today's mobile-first world, having a powerful mobile presence is essential. 
+                            DevScript Nepal creates stunning mobile applications that engage users and drive 
+                            business growth across iOS and Android platforms.
+                        </p>
+                        <p>
+                            Whether you need a native app for maximum performance or a cross-platform solution 
+                            for wider reach, our team delivers mobile experiences that users love. We combine 
+                            beautiful design with robust functionality to create apps that stand out.
+                        </p>
+                        <p>
+                            From concept to deployment and beyond, we handle every aspect of mobile app development 
+                            with expertise and attention to detail.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fade-right">
+                    <div class="card">
+                        <h3 class="card-title" style="color: var(--golden-yellow);">What We Build</h3>
+                        <ul class="service-features">
+                            <li>Native iOS Apps (Swift/SwiftUI)</li>
+                            <li>Native Android Apps (Kotlin/Jetpack)</li>
+                            <li>Cross-Platform Apps (React Native, Flutter)</li>
+                            <li>Progressive Web Apps (PWA)</li>
+                            <li>Real-Time & Chat Applications</li>
+                            <li>Social Networking Apps</li>
+                            <li>On-Demand Service Apps</li>
+                            <li>Mobile E-Commerce</li>
+                            <li>Fitness & Health Apps</li>
+                            <li>Enterprise Mobile Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: linear-gradient(to bottom, transparent, rgba(10, 14, 26, 0.5), transparent);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Development <span class="highlight">Approaches</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Choose the right approach for your mobile app project
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card fade-up">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                        <line x1="12" y1="18" x2="12" y2="18"></line>
+                    </svg>
+                    <h3>Native Development</h3>
+                    <p>Maximum performance with platform-specific code. Best for complex apps requiring full device access.</p>
+                </div>
+
+                <div class="info-card fade-up">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <h3>Cross-Platform</h3>
+                    <p>One codebase for iOS and Android. Faster development and easier maintenance for most apps.</p>
+                </div>
+
+                <div class="info-card fade-up">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <h3>Progressive Web Apps</h3>
+                    <p>Web-based apps with native-like features. Cost-effective solution with broad compatibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Core <span class="highlight">Features</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                        <line x1="16" y1="8" x2="2" y2="22"></line>
+                        <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                    </svg>
+                    <h4>Push Notifications</h4>
+                    <p>Engage users with timely, relevant notifications that drive re-engagement and retention.</p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <h4>Location Services</h4>
+                    <p>GPS integration for location-based features, maps, and geofencing capabilities.</p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <h4>Secure Authentication</h4>
+                    <p>Biometric login, OAuth, and multi-factor authentication for maximum security.</p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <h4>Social Integration</h4>
+                    <p>Connect with social platforms for seamless sharing and authentication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-cta fade-in">
+                <h2>Let's Build Your <span class="highlight">Mobile App</span></h2>
+                <p>Transform your idea into a powerful mobile application that users will love.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="index.html#contact" class="btn-primary">
+                        Get Started Today
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="index.html#services" class="btn-secondary">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>                        <img src="final.png" alt="DevScript Nepal Logo" class="logo-img"></span>
+                        </div>
+                        <span class="logo-text"></span>
+                    </div>
+                    <p>
+                        Empowering businesses with cutting-edge technology solutions. 
+                        Based in Nepal, serving globally.
+                    </p>
+                    <div class="footer-social">
+                                <a href="https://www.linkedin.com/in/devscript-nepal-8b556b395/" class="social-link" aria-label="LinkedIn" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/devscriptnepal/" class="social-link" aria-label="Instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61582986553210" class="social-link" aria-label="Facebook" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@devscriptnepal" class="social-link" aria-label="TikTok" target="_blank">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Cloud Services</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> DevScript Nepal Pvt. Ltd. — also known as DevScript</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+        <!-- WhatsApp Button -->
+    <a href="https://wa.me/9779765224252" target="_blank" id="whatsappButton" class="whatsapp-button" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.372 0 0 5.373 0 12c0 2.12.554 4.112 1.515 5.845L0 24l6.316-1.658A11.94 11.94 0 0 0 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0Zm0 21.818a9.764 9.764 0 0 1-4.988-1.369l-.357-.21-3.754.985 1.004-3.658-.233-.376A9.76 9.76 0 0 1 2.182 12c0-5.43 4.387-9.818 9.818-9.818S21.818 6.57 21.818 12 17.43 21.818 12 21.818Zm5.5-7.362c-.302-.151-1.786-.88-2.064-.981-.277-.1-.479-.151-.681.151-.201.302-.782.981-.958 1.182-.176.202-.353.227-.655.076-.302-.151-1.276-.47-2.432-1.497-.899-.802-1.505-1.79-1.681-2.092-.176-.302-.019-.465.133-.616.136-.135.302-.353.453-.529.151-.176.201-.302.302-.504.1-.201.05-.378-.025-.529-.075-.151-.681-1.64-.934-2.242-.246-.591-.497-.511-.681-.521l-.581-.01c-.201 0-.529.076-.806.378-.277.302-1.06 1.035-1.06 2.525 0 1.49 1.086 2.93 1.238 3.132.151.201 2.137 3.263 5.178 4.573.725.313 1.29.5 1.73.64.727.232 1.388.2 1.91.121.583-.086 1.786-.728 2.038-1.43.252-.704.252-1.306.176-1.43-.075-.126-.277-.202-.579-.353Z"/>
+        </svg>
+    </a>
+
+
+
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
