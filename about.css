@@ -1,0 +1,85 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card-title {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+    color: var(--pure-white);
+}
+
+.about-story p {
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.feature-card {
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 
+        0 5px 20px rgba(255, 255, 255, 0.2),
+        0 0 30px rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.feature-card svg {
+    color: var(--pure-white);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover svg {
+    transform: scale(1.1);
+}
+
+.feature-card h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+    color: var(--pure-white);
+}
+
+.feature-card:hover h4 {
+    color: var(--light-gray);
+}
+
+.feature-card p {
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+    line-height: 1.6;
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.vision-card:hover,
+.mission-card:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.vision-card .card-title,
+.mission-card .card-title {
+    color: var(--pure-white);
+}
+
+.vision-mission-grid p {
+    color: var(--light-gray);
+    line-height: 1.7;
+}
