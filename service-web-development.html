@@ -29,7 +29,7 @@
   <meta name="twitter:image" content="https://devscriptnepal.com.np/assets/web-development-preview.jpg" />
 
   <!-- ✅ Favicon & Theme -->
-  <link rel="icon" href="https://devscriptnepal.com.np/final.png" type="image/png" />
+  <link rel="icon" href="https://devscriptnepal.com.np/black_logo.png" type="image/png" />
   <meta name="theme-color" content="#0d1117" />
 
     <!-- ✅ Fonts & Styles -->
@@ -55,7 +55,7 @@
         "@type": "Organization",
         "name": "DevScript Nepal",
         "url": "https://devscriptnepal.com.np/",
-        "logo": "https://devscriptnepal.com.np/final.png",
+        "logo": "https://devscriptnepal.com.np/black_logo.png",
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61582986553210",
           "https://www.instagram.com/devscriptnepal/",
@@ -98,52 +98,32 @@
     <canvas id="particleCanvas"></canvas>
 
     <!-- Navigation -->
-    <!-- Navigation -->
-    <nav id="mainNav">
-        <div class="container">
-            <div class="nav-content">
-                <!-- Logo -->
-                <!-- Logo -->
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">
-                        <!-- Logo image -->
-                        <img src="final.png" alt="DevScript Nepal Logo" class="logo-img">
-                    </div>
-                    <!-- <span class="logo-text">DevScript Nepal</span> -->
-                </a>
-                <!-- Desktop Navigation -->
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-container">
 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <svg class="menu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                    <svg class="close-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+        <!-- LOGO INSIDE NAVBAR -->
+        <a href="index.html" class="logo">
+            <img src="black_logo.png" alt="DevScript Nepal Logo" class="logo-img">
+        </a>
 
-            <!-- Mobile Menu -->
-            <div class="mobile-menu" id="mobileMenu">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+        <!-- Navigation Links -->
+        <ul class="nav-list" id="navList">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button id="hamburger-btn">
+            <span id="hamburger-icon">☰</span>
+        </button>
+
+    </div>
+</nav>
+
 
     <!-- Page Header -->
     <section class="page-header">
@@ -347,7 +327,7 @@
                 <div class="footer-company">
                     <div class="footer-logo">
                         <div class="logo-icon">
-                            <span><img src="final.png" alt="DevScript Nepal Logo" class="logo-img"></span>
+                            <span><img src="black_logo.png" alt="DevScript Nepal Logo" class="logo-img"></span>
                         </div>
                         <span class="logo-text"></span>
                     </div>

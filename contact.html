@@ -15,7 +15,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Contact Us | DevScript Nepal" />
   <meta property="og:description" content="Reach out to DevScript Nepal for expert web, app, and software development solutions tailored to your business goals." />
-  <meta property="og:image" content="https://devscriptnepal.com.np/final.png" />
+  <meta property="og:image" content="https://devscriptnepal.com.np/black_logo.png" />
   <meta property="og:url" content="https://devscriptnepal.com.np/contact.html" />
   <meta property="og:site_name" content="DevScript Nepal" />
 
@@ -23,10 +23,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact Us | DevScript Nepal" />
   <meta name="twitter:description" content="Contact DevScript Nepal for reliable IT, web, and software development solutions. Let's create something impactful together!" />
-  <meta name="twitter:image" content="https://devscriptnepal.com.np/final.png" />
+  <meta name="twitter:image" content="https://devscriptnepal.com.np/black_logo.png" />
 
   <!-- ✅ Favicon -->
-  <link rel="icon" type="image/png" href="final.png" />
+  <link rel="icon" type="image/png" href="black_logo.png" />
 
     <!-- ✅ Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,7 @@
       "@type": "Organization",
       "name": "DevScript Nepal",
       "url": "https://devscriptnepal.com.np/",
-      "logo": "https://devscriptnepal.com.np/final.png",
+      "logo": "https://devscriptnepal.com.np/black_logo.png",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61582986553210",
         "https://www.instagram.com/devscriptnepal/",
@@ -68,132 +68,168 @@
 
 
 <body>
-    <!-- Particle Background Canvas -->
-    <canvas id="particleCanvas"></canvas>
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-container">
 
-    <!-- Navigation -->
-    <nav id="mainNav">
-        <div class="container">
-            <div class="nav-content">
-                <!-- Logo -->
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">
-                        <!-- Logo image -->
-                        <img src="final.png" alt="DevScript Nepal Logo" class="logo-img">
-                    </div>
-                    <!-- <span class="logo-text">DevScript Nepal</span> -->
-                </a>
+        <!-- LOGO INSIDE NAVBAR -->
+        <a href="index.html" class="logo">
+            <img src="black_logo.png" alt="DevScript Nepal Logo" class="logo-img">
+        </a>
 
-                <!-- Desktop Navigation -->
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+        <!-- Navigation Links -->
+        <ul class="nav-list" id="navList">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <svg class="menu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                    <svg class="close-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+        <!-- Hamburger -->
+        <button id="hamburger-btn">
+            <span id="hamburger-icon">☰</span>
+        </button>
 
-            <!-- Mobile Menu -->
-            <div class="mobile-menu" id="mobileMenu">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+    </div>
+</nav>
+
+
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="hero-gradient-1"></div>
-        <div class="hero-gradient-2"></div>
         <div class="container">
-            <h1 class="page-title fade-in">Get In <span class="highlight">Touch</span></h1>
-            <p class="page-description fade-in">Let's discuss how we can help bring your ideas to life. Fill out the form and our team will get back to you within 24 hours.</p>
+            <h1 class="page-title fade-in">About <span class="highlight">DevScript Nepal</span></h1>
+            <p class="page-description fade-in">A leading IT startup based in Nepal, dedicated to transforming businesses through innovative technology solutions and exceptional digital experiences.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section section-padding">
+    <!-- About Section -->
+    <section class="about-section section-padding">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info fade-left">
+            <div class="about-grid">
+                <!-- Story -->
+                <div class="about-story fade-left">
                     <div class="card">
-                        <h3 class="card-title highlight">Contact Information</h3>
-                        <p>We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+                        <h3 class="card-title highlight">Our Story</h3>
+                        <p>
+                            Founded with a vision to revolutionize the IT landscape in Nepal, DevScript Nepal 
+                            has grown into a trusted partner for businesses seeking digital transformation.
+                        </p>
+                        <p>
+                            Our team of expert developers, designers, and strategists work together to create 
+                            solutions that are not just functional, but extraordinary.
+                        </p>
+                        <p>
+                            We believe in the power of technology to create positive change, and we're 
+                            committed to delivering excellence in every project we undertake.
+                        </p>
+                    </div>
+                </div>
 
-                        <div class="contact-items">
-                            <a href="mailto:info@devscriptnepal.com" class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="contact-label">Email</div>
-                                    <div class="contact-value">info@devscriptnepal.com</div>
-                                </div>
-                            </a>
 
-                            <a href="tel:+9779876543210" class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="contact-label">Phone</div>
-                                    <div class="contact-value">+977 9876543210</div>
-                                </div>
-                            </a>
+                <!-- Features -->
+                <div class="features-grid fade-right">
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <h4>Innovation First</h4>
+                        <p>We leverage cutting-edge technologies to deliver solutions that exceed expectations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <h4>Goal-Oriented</h4>
+                        <p>Every project is meticulously planned and executed to meet your business objectives.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h4>Client-Centric</h4>
+                        <p>Your success is our priority. We work closely with you every step of the way.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <h4>Quality Assured</h4>
+                        <p>We maintain the highest standards in code quality, security, and performance.</p>
+                    </div>
+                </div>
+            </div>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="contact-label">Location</div>
-                                    <div class="contact-value">Kathmandu, Nepal</div>
-                                </div>
-                            </div>
+            <!-- Vision & Mission -->
+            <div class="vision-mission-grid fade-up">
+                <div class="card vision-card">
+                    <h3 class="card-title">Our Vision</h3>
+                    <p>
+                        To be the leading technology partner in Nepal, recognized globally for our 
+                        innovative solutions and commitment to excellence in software development.
+                    </p>
+                </div>
+                <div class="card mission-card">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p>
+                        To empower businesses with cutting-edge technology solutions that drive growth, 
+                        efficiency, and innovation while fostering a culture of continuous learning.
+                    </p>
+                </div>
+            </div>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="contact-label">Working Hours</div>
-                                    <div class="contact-value">Mon - Fri: 9AM - 6PM</div>
-                                </div>
-                            </div>
+            <!-- Stats -->
+            <div class="stats-section fade-in">
+                <h2 class="section-title">Our <span class="highlight">Achievements</span></h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="section-cta fade-in">
+                <h2>Ready to work with us?</h2>
+                <p>Let's discuss how we can help bring your ideas to life</p>
+                <a href="contact.html" class="btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span><img src="black_logo.png" alt="Dev Script Nepal Logo" class="logo-img"></span>
                         </div>
-
-                        <div class="social-section">
-                            <p>Follow us on social media</p>
-                            <div class="social-links">
+                        <span class="logo-text"></span>
+                    </div>
+                    <p>
+                        Empowering businesses with cutting-edge technology solutions. 
+                        Based in Nepal, serving globally.
+                    </p>
+                    <div class="footer-social">
                                 <a href="https://www.linkedin.com/in/devscript-nepal-8b556b395/" class="social-link" aria-label="LinkedIn" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
@@ -206,137 +242,44 @@
                                 <a href="https://www.tiktok.com/@devscriptnepal" class="social-link" aria-label="TikTok" target="_blank">
                                     <i class="fab fa-tiktok"></i>
                                 </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper fade-right">
-                    
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
 
-
-
-                    
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Cloud Services</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Additional Info Section -->
-            <div class="additional-info fade-in">
-                <div class="info-grid">
-                    <div class="info-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                        <h3>Chat With Us</h3>
-                        <p>Our support team is available 24/7 to help you with any questions.</p>
-                    </div>
-                    <div class="info-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                        <h3>Schedule a Call</h3>
-                        <p>Book a free consultation to discuss your project requirements.</p>
-                    </div>
-                    <div class="info-card">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <h3>Email Us</h3>
-                        <p>Send us an email and we'll respond within 24 hours.</p>
-                    </div>
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> DevScript Nepal Pvt. Ltd. — also known as DevScript</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
-    </section>
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-
-      <!-- Company Info -->
-      <div class="footer-company">
-        <div class="footer-logo">
-          <div class="logo-icon">
-            <span><img src="final.png" alt="DevScript Nepal Logo" class="logo-img"></span>
-          </div>
-          <span class="logo-text"></span>
-        </div>
-        <p>
-          Empowering businesses with cutting-edge technology solutions. 
-          Based in Nepal, serving globally.
-        </p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/devscript-nepal-8b556b395/" class="social-link" aria-label="LinkedIn" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/devscriptnepal/" class="social-link" aria-label="Instagram" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61582986553210" class="social-link" aria-label="Facebook" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://www.tiktok.com/@devscriptnepal" class="social-link" aria-label="TikTok" target="_blank">
-            <i class="fab fa-tiktok"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div class="footer-links">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html">Web Development</a></li>
-          <li><a href="services.html">Mobile Apps</a></li>
-          <li><a href="services.html">UI/UX Design</a></li>
-          <li><a href="services.html">Cloud Services</a></li>
-          <li><a href="services.html">Consulting</a></li>
-        </ul>
-      </div>
-
-
-    </div>
-    <!-- Find Us / Map -->
-      <div class="footer-map">
-        <h4>Find Us</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.084532747482!2d85.38937697447021!3d27.652856227894535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb11c23bdb06a7%3A0x4c6b2c560077e1e5!2sDevScript%20Nepal%20Pvt.%20Ltd!5e0!3m2!1sen!2snp!4v1762158100250!5m2!1sen!2snp"
-          width="100%"
-          height="200"
-          style="border:0; border-radius:10px;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        
-      </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <p>© <span id="currentYear"></span> DevScript Nepal Pvt. Ltd. — also known as DevScript</p>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-  
-</footer>
-
+    </footer>
 
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top">
@@ -351,6 +294,7 @@
             <path d="M12 0C5.372 0 0 5.373 0 12c0 2.12.554 4.112 1.515 5.845L0 24l6.316-1.658A11.94 11.94 0 0 0 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0Zm0 21.818a9.764 9.764 0 0 1-4.988-1.369l-.357-.21-3.754.985 1.004-3.658-.233-.376A9.76 9.76 0 0 1 2.182 12c0-5.43 4.387-9.818 9.818-9.818S21.818 6.57 21.818 12 17.43 21.818 12 21.818Zm5.5-7.362c-.302-.151-1.786-.88-2.064-.981-.277-.1-.479-.151-.681.151-.201.302-.782.981-.958 1.182-.176.202-.353.227-.655.076-.302-.151-1.276-.47-2.432-1.497-.899-.802-1.505-1.79-1.681-2.092-.176-.302-.019-.465.133-.616.136-.135.302-.353.453-.529.151-.176.201-.302.302-.504.1-.201.05-.378-.025-.529-.075-.151-.681-1.64-.934-2.242-.246-.591-.497-.511-.681-.521l-.581-.01c-.201 0-.529.076-.806.378-.277.302-1.06 1.035-1.06 2.525 0 1.49 1.086 2.93 1.238 3.132.151.201 2.137 3.263 5.178 4.573.725.313 1.29.5 1.73.64.727.232 1.388.2 1.91.121.583-.086 1.786-.728 2.038-1.43.252-.704.252-1.306.176-1.43-.075-.126-.277-.202-.579-.353Z"/>
         </svg>
     </a>
+
 
 
 

@@ -1,56 +1,4 @@
-// ================================
-// DevScript Nepal - Main JavaScript
-// ================================
 
-// ===== CUSTOM CURSOR =====
-// (function initCustomCursor() {
-//     const cursorDot = document.createElement('div');
-//     const cursorOutline = document.createElement('div');
-//     cursorDot.className = 'cursor-dot';
-//     cursorOutline.className = 'cursor-outline';
-    
-//     document.body.appendChild(cursorDot);
-//     document.body.appendChild(cursorOutline);
-    
-//     let mouseX = 0, mouseY = 0;
-//     let outlineX = 0, outlineY = 0;
-    
-//     document.addEventListener('mousemove', (e) => {
-//         mouseX = e.clientX;
-//         mouseY = e.clientY;
-        
-//         cursorDot.style.left = mouseX + 'px';
-//         cursorDot.style.top = mouseY + 'px';
-//     });
-    
-//     function animateOutline() {
-//         outlineX += (mouseX - outlineX) * 0.2;
-//         outlineY += (mouseY - outlineY) * 0.2;
-        
-//         cursorOutline.style.left = outlineX + 'px';
-//         cursorOutline.style.top = outlineY + 'px';
-        
-//         requestAnimationFrame(animateOutline);
-//     }
-    
-//     animateOutline();
-    
-//     // Cursor effects on hover
-//     const interactiveElements = document.querySelectorAll('a, button, .card, .service-card, .project-card');
-//     interactiveElements.forEach(el => {
-//         el.addEventListener('mouseenter', () => {
-//             cursorDot.style.transform = 'scale(1.5)';
-//             cursorOutline.style.width = '48px';
-//             cursorOutline.style.height = '48px';
-//         });
-        
-//         el.addEventListener('mouseleave', () => {
-//             cursorDot.style.transform = 'scale(1)';
-//             cursorOutline.style.width = '32px';
-//             cursorOutline.style.height = '32px';
-//         });
-//     });
-// })();
 
 // ===== PARTICLE BACKGROUND =====
 (function initParticles() {
@@ -405,4 +353,45 @@ window.addEventListener('load', () => {
     
     // Add loaded class for additional animations
     document.body.classList.add('loaded');
+});
+
+
+
+
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const navList = document.getElementById("navList");
+const navLinks = document.querySelectorAll(".nav-link");
+
+let isMenuOpen = false;
+
+function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    navList.classList.toggle("active", isMenuOpen);
+    hamburgerIcon.textContent = isMenuOpen ? "✕" : "☰";
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+}
+
+// Hamburger click
+hamburgerBtn.addEventListener("click", toggleMenu);
+
+// Close menu on link click
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+        if (isMenuOpen) toggleMenu();
+    });
+});
+
+// Click outside to close
+document.addEventListener("click", (e) => {
+    if (!navList.contains(e.target) && !hamburgerBtn.contains(e.target) && isMenuOpen) {
+        toggleMenu();
+    }
+});
+
+// ESC key to close
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isMenuOpen) toggleMenu();
 });
